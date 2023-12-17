@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISKyrs1ВозвратБилета",
+  "modelName": "i-i-s-kyrs1-возврат-билета",
+  "className": "ВозвратБилета",
+  "nameSpace": "IIS.Kyrs1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаВозврата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "покупкаБилета",
+      "relatedTo": "i-i-s-kyrs1-покупка-билета",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ВозвратБилетаE",
+      "modelName": "i-i-s-kyrs1-возврат-билета",
+      "attrs": [
+        {
+          "name": "датаВозврата",
+          "caption": "Дата возврата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ПунктОтпр",
+          "lookupValueField": "пунктОтпр",
+          "relationName": "ПокупкаБилета",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "пунктОтпр",
+              "caption": "Пункт отпр",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Покупка билета",
+          "name": "покупкаБилета",
+          "relatedTo": "i-i-s-kyrs1-покупка-билета",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ВозвратБилетаL",
+      "modelName": "i-i-s-kyrs1-возврат-билета",
+      "attrs": [
+        {
+          "name": "датаВозврата",
+          "caption": "Дата возврата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПокупкаБилета",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "пунктОтпр",
+              "caption": "Пункт отпр",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Пункт отпр",
+          "name": "покупкаБилета",
+          "relatedTo": "i-i-s-kyrs1-покупка-билета",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

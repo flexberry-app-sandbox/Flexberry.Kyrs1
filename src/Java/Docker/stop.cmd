@@ -1,0 +1,1 @@
+docker-compose -p kyrs1-java down

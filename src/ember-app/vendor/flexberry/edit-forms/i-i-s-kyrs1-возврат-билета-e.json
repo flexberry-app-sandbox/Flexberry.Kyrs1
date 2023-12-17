@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПокупкаБилета",
+      "projection": "ПокупкаБилетаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Возврат билета",
+  "name": "IISKyrs1ВозвратБилетаE",
+  "className": "ВозвратБилетаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs1-возврат-билета",
+      "modelProjection": "ВозвратБилетаE"
+    }
+  ]
+}

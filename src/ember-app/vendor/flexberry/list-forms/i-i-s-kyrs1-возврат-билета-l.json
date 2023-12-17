@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kyrs1-возврат-билета-e",
+  "editForm": "i-i-s-kyrs1-возврат-билета-e",
+  "external": false,
+  "caption": "Возврат билета",
+  "name": "IISKyrs1ВозвратБилетаL",
+  "className": "ВозвратБилетаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs1-возврат-билета",
+      "modelProjection": "ВозвратБилетаL"
+    }
+  ]
+}

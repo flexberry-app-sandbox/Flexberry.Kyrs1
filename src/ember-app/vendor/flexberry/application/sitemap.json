@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "Kyrs1",
+  "applicationTitle": "Kyrs1",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kyrs1",
+      "caption": "Kyrs1",
+      "title": "Kyrs1",
+      "children": [
+        {
+          "link": "i-i-s-kyrs1-билет-касса-l",
+          "menuName": null,
+          "caption": "Билет касса",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs1-клиент-l",
+          "menuName": null,
+          "caption": "Клиент_",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs1-возврат-билета-l",
+          "menuName": null,
+          "caption": "Возврат билета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs1-транзакция-l",
+          "menuName": null,
+          "caption": "Транзакция_",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs1-покупка-билета-l",
+          "menuName": null,
+          "caption": "Покупка билета",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kyrs1-перевозчик-l",
+          "menuName": null,
+          "caption": "Перевозчик",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kyrs1-транзакция-e",
+  "editForm": "i-i-s-kyrs1-транзакция-e",
+  "external": false,
+  "caption": "Транзакция_",
+  "name": "IISKyrs1Транзакция_L",
+  "className": "Транзакция_L",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs1-транзакция",
+      "modelProjection": "Транзакция_L"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПокупкаБилета",
+      "projection": "ПокупкаБилетаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Клиент_",
+      "projection": "Клиент_L",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ВозвратБилета",
+      "projection": "ВозвратБилетаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Транзакция_",
+  "name": "IISKyrs1Транзакция_E",
+  "className": "Транзакция_E",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kyrs1-транзакция",
+      "modelProjection": "Транзакция_E"
+    }
+  ]
+}

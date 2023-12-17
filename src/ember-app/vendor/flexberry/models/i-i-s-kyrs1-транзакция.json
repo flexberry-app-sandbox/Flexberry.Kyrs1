@@ -1,0 +1,204 @@
+﻿{
+  "name": "IISKyrs1Транзакция_",
+  "modelName": "i-i-s-kyrs1-транзакция",
+  "className": "Транзакция_",
+  "nameSpace": "IIS.Kyrs1",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "возвратБилета",
+      "relatedTo": "i-i-s-kyrs1-возврат-билета",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент_",
+      "relatedTo": "i-i-s-kyrs1-клиент",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "покупкаБилета",
+      "relatedTo": "i-i-s-kyrs1-покупка-билета",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "Транзакция_E",
+      "modelName": "i-i-s-kyrs1-транзакция",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ПунктОтпр",
+          "lookupValueField": "пунктОтпр",
+          "relationName": "ПокупкаБилета",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "пунктОтпр",
+              "caption": "Пункт отпр",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Покупка билета",
+          "name": "покупкаБилета",
+          "relatedTo": "i-i-s-kyrs1-покупка-билета",
+          "inverse": null
+        },
+        {
+          "lookupValue": "БанкСчет",
+          "lookupValueField": "банкСчет",
+          "relationName": "Клиент_",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "банкСчет",
+              "caption": "Банк счет",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Клиент_",
+          "name": "клиент_",
+          "relatedTo": "i-i-s-kyrs1-клиент",
+          "inverse": null
+        },
+        {
+          "lookupValue": "ДатаВозврата",
+          "lookupValueField": "датаВозврата",
+          "relationName": "ВозвратБилета",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаВозврата",
+              "caption": "Дата возврата",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Возврат билета",
+          "name": "возвратБилета",
+          "relatedTo": "i-i-s-kyrs1-возврат-билета",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "Транзакция_L",
+      "modelName": "i-i-s-kyrs1-транзакция",
+      "attrs": [
+        {
+          "name": "номер",
+          "caption": "Номер",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПокупкаБилета",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "пунктОтпр",
+              "caption": "Пункт отпр",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Пункт отпр",
+          "name": "покупкаБилета",
+          "relatedTo": "i-i-s-kyrs1-покупка-билета",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент_",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "банкСчет",
+              "caption": "Банк счет",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Банк счет",
+          "name": "клиент_",
+          "relatedTo": "i-i-s-kyrs1-клиент",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВозвратБилета",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "датаВозврата",
+              "caption": "Дата возврата",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Дата возврата",
+          "name": "возвратБилета",
+          "relatedTo": "i-i-s-kyrs1-возврат-билета",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
